@@ -25,11 +25,8 @@ function App() {
     // porque de lo contrario siempre se estaria ejecutando
 // eslint-disable-next-line react-hooks/exhaustive-deps
     // Cada ves que se realice un cambio en el stateel useEffect se actualiza
-  }, [citas] );
+  }, [citas, citasIniciales] );
 
-  useEffect(() => {
-    console.log("h........");
-  }, [])
 
 
   //Funcion que tome las citas actuales y agregue la nueva
